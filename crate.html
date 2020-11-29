@@ -38,8 +38,8 @@
 
 				new RGBELoader()
 					.setDataType( THREE.UnsignedByteType )
-					.setPath( 'textures/equirectangular/' )
-					.load( 'royal_esplanade_1k.hdr', function ( texture ) {
+					.setPath( 'textures/hdri-test/' )
+					.load( 'quarry_01_1k.hdr', function ( texture ) {
 
 						const envMap = pmremGenerator.fromEquirectangular( texture ).texture;
 
@@ -56,8 +56,8 @@
 						// use of RoughnessMipmapper is optional
 						const roughnessMipmapper = new RoughnessMipmapper( renderer );
 
-						const loader = new GLTFLoader().setPath( 'models/gltf/' );
-						loader.load( 'gltf_test.gltf', function ( gltf ) {
+						const loader = new GLTFLoader().setPath( 'models/gltf/DamagedHelmet/glTF/' );
+						loader.load( 'DamagedHelmet.gltf', function ( gltf ) {
 
 							gltf.scene.traverse( function ( child ) {
 
