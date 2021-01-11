@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE js>
 	<head>
 		<title>no idea what I'm doing</title>
 		<style>
